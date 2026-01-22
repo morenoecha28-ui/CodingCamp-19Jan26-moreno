@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>TO-DO LIST</h2>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="card">TOTAL<br><span id="total">0</span></div>
+    <div class="card completed">COMPLETED<br><span id="completed">0</span></div>
+    <div class="card pending">PENDING<br><span id="pending">0</span></div>
+    <div class="card progress">PROGRESS<br><span id="progress">0%</span></div>
+  </div>
+
+  <!-- Add Task -->
+  <div class="add-task">
+    <input type="text" id="taskInput" placeholder="Add a todo...">
+    <input type="date" id="dateInput">
+    <button onclick="addTask()">+</button>
+  </div>
+
+  <!-- Task List -->
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Due Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="taskList">
+      <tr>
+        <td colspan="4" class="empty">No tasks found</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

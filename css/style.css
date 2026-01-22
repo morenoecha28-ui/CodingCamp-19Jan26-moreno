@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  padding: 30px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: #f1f2f6;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.completed { color: #2ecc71; }
+.pending { color: #f1c40f; }
+.progress { color: #3498db; }
+
+.card span {
+  display: block;
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+.add-task {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff00aa;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.empty {
+  text-align: center;
+  color: #aaa;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button.small {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.success {
+  background: #2ecc71;
+  color: white;
+}
+
+.danger {
+  background: #e74c3c;
+  color: white;
+}
